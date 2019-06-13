@@ -2,16 +2,38 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Invitado</title>
+<title>Festejado</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body id="festejado">
-    <center>
-    <p><strong>Paso 1.</strong> Crea una invitacion digital que refleje lo cool de tu fiesta</p>
-    <img src="img/editar.png" id="imgEditar"> 
-    <p><strong>Paso 2.</strong> Ingresa el mensaje secreto (solo texto en MAYUSCULAS)</p>
-    <input type="text" id="textCifra">
-    <p><strong>Paso 3.</strong>Elige la llave secreta que usaran tus invitados</p>
-</center>    
+    <a href="index.html"><img src="img/home.png" class="boton-volver"></a>
+    <img src="img/globos.png" class="imgGlobos">
+    <div id="paso-uno">
+        <h4><br>Paso 1. Crea una invitacion digital que refleje lo cool de tu fiesta</h3>
+        <br><center><img src="img/editar.png" id="imgEditar"></center>
+    </div>
+    <div id="paso-dos">
+        <h4><br>Paso 2. Ingresa el mensaje secreto que enviaras a tus invitados, recuerda que solo debe ser texto en MAYUSCULAS</h3>
+            <br><input type="text" id="text-cifra" placeholder="A-Z SIN CARACTERES ESPECIALES">
+            </div>
+    </div>
+    <div id="paso-tres">
+        <h4><br>Paso 3. Elige la llave secreta que usaras tú y tus invitados para decifrar los mensajes</h3>
+            <br><br><center><input type="number" id="off-setone" min="1" max="20" placeholder="llave secreta"></center>
+    </div>
+    
+    <center><br><br><br><br><label for="img-cifrar"><strong>Da click para cifrar</strong></label>
+        <br><br><img src="img/cifrar.png" id="img-cifrar">
+        </center>
+
+        <!--<br><br><p style="color: rgb(10, 10, 10)">Mensaje:</p>-->
+
+        <p style="color: rgb(8, 8, 8) "id="saludo"></p>
+
+    <br><br><br><br><center><h4>¡Listo! Si has terminado, vamos a enviar a tus invitados</h4><br> 
+    <img src="img/Enviar.png" class="img-enviar"></center>
+
+<script src="cipher.js"></script>
+<script src="index.js"></script>    
 </body>
 </html>

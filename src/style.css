@@ -11,33 +11,42 @@
 
 *{
     top:0;
-    margin:10px;
+    margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+#home-page{
+    top:0;
+    margin:20px;
+    padding:0;
 }
 
 header a img{
     width: 80%;
     height: 300px;
-    
-
+    margin-top: 50px;
 }
 body{
     font-family: 'Lucida Sans';
-
 }
 .icon-menu{
     font-size: 20px;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 #check{
     display:none;
 }
 #check:checked - .menu{
     width: 400px;
+
 }
-.menu{
+#menu{
    position:fixed;
    display:none; 
+   margin: 10px;
 
 }
 .contenido label{
@@ -45,11 +54,74 @@ body{
 }
 
 #invitado{
-    background-color:#85C0F2;
+    background-color:rgb(188, 207, 224);
 }
-#festejado{
-    background-color:#FAA6E2;
+
+#festejado h4{
+    color: black;
 }
 #imgEditar{
     width: 70px; height: 50px;
+    cursor: pointer;
+}
+#text-cifra{
+    width: 100%;
+}
+#off-setone{
+    width: 50%;
+}
+.boton-volver{
+    width: 10vh;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.imgGlobos{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img-cifrar{
+    width: 10vh;
+    cursor:pointer;
+}
+.img-enviar{
+    width: 10vh;
+    cursor:pointer;
+}
+#paso-uno{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5%;
+    position: relative;
+    top:50px;
+    left:10%;
+}
+#paso-dos{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5%;
+    position: absolute;
+    top:50px;
+    right: 40%;
+
+}
+#paso-tres{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5%;
+    position: absolute;
+    top:50px;
+    right:10%;
 }
