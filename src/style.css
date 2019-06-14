@@ -23,12 +23,20 @@
 }
 
 header a img{
-    width: 80%;
+    width: 50%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 body{
-    font-family: 'Lucida Sans';
+    font-family: 'Elvetica', serif;
+}
+
+#titulo{
+    font-size: 60px;
+}
+#pregunta{
+    font-size: 30px;
+    margin: 20px;
 }
 .icon-menu{
     font-size: 20px;
@@ -53,12 +61,22 @@ body{
     cursor:pointer;
 }
 
+.button{
+    margin: 20px;
+}
+
 #invitado{
     background-color:rgb(188, 207, 224);
 }
 
 #festejado h4{
     color: black;
+}
+#festejado{
+    font-size: 20px;
+}
+#festejado1{
+    font-size: 30px;
 }
 #imgEditar{
     width: 70px; height: 50px;
@@ -91,37 +109,33 @@ body{
     width: 10vh;
     cursor:pointer;
 }
-#paso-uno{
+.pasos{
     background-color: white;
     width: 300px;
     height: 200px;
     padding: 20px;
     text-align: left;
     border-radius: 5%;
-    position: relative;
     top:50px;
+}
+#paso-uno{
+    position: relative;
     left:10%;
 }
 #paso-dos{
-    background-color: white;
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    text-align: left;
-    border-radius: 5%;
     position: absolute;
-    top:50px;
     right: 40%;
-
 }
 #paso-tres{
-    background-color: white;
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    text-align: left;
-    border-radius: 5%;
     position: absolute;
-    top:50px;
     right:10%;
+}
+#saludo{
+    color: blue;
+    display: block;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    opacity: 0.9;
+    padding: 20px;
 }

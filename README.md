@@ -1,3 +1,22 @@
+# Invitaciones Misteriosas
+
+Tu fiesta empieza en el momento que mandas las invitaciones. Tus invitados van a decidir ir o no ir según el contenido de tu invitación. Por eso, necesitas que el diseño sea lo más divertido posible. Dile adios a las invitaciones aburridas y dale un toque de misterio para crear un juego divertido entre tu y tus invitados.
+
+## Objetivo
+
+- Crear una web que permita al usuario personalizar sus propias invitaciones de     cumpleaños digitales
+- Crear una experiencia online positiva, ayudadando a salvar arboles, ahorrar       tiempo y dinero cuando estas planeando una fiesta
+- Que esta experiencia tenga un plus en comparacion con las web´s actuales del      mismo ambito generando un juego entre los invitados y su anfitron al permitir     enviar mensajes cifrados en su invitación.
+
+## Definición del producto
+
+Dirigido a Usuarios que esten planeando una fiesta de cumpleaños y gusten del mundo digital (Millennials y Genración Z). Para ellos el mundo esta en las redes sociales, son creativos, maduros y autosuficientes. Se crea un producto que aporte al desarrollo sustentable dentro del mundo digital actual.
+
+La web permite al usuario crear invitaciones digitales personalizadas y agregarles un mensaje cifrado, ya sea la direccion del evento o algun mensaje personal para crear un juego entre los invitados y el usuario en el que la web sea la interfaz para desifrar el mensaje. Brinda la opcion de enviar por correo electronico, whatsapp o messenger ahorrando tiempo y dando alcance a todos sus amigos y conocidos. 
+
+Se realiza encuesta para definir usuario y utilidad [Encuesta](https://docs.google.com/forms/d/112LpHx_mkxxecc6kCdOZkA4tXOzc0KIMVkED0YODfbQ/edit#responses)
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.

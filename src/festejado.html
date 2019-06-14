@@ -5,34 +5,38 @@
 <title>Festejado</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body id="festejado">
+<body id="pagina2">
+    <section id="festejado">
+<!--Boton para regresar a la pagina de inicio-->
     <a href="index.html"><img src="img/home.png" class="boton-volver"></a>
+<!--Imagen de fondo-->
     <img src="img/globos.jpg" class="imgGlobos">
-    <div id="paso-uno">
+<!--Cajas de instrucciones en pantalla-->
+    <div id="paso-uno" class="pasos">
         <h4><br>Paso 1. Crea una invitacion digital que refleje lo cool de tu fiesta</h3>
         <br><center><img src="img/editar.png" id="imgEditar"></center>
     </div>
-    <div id="paso-dos">
-        <h4><br>Paso 2. Ingresa el mensaje secreto que enviaras a tus invitados, recuerda que solo debe ser texto en MAYUSCULAS</h3>
+    <div id="paso-dos" class="pasos">
+        <h4><br>Paso 2. Ingresa el mensaje secreto que enviaras a tus invitados</h3>
             <br><input type="text" id="text-cifra" placeholder="A-Z SIN CARACTERES ESPECIALES">
             </div>
     </div>
-    <div id="paso-tres">
+    <div id="paso-tres" class="pasos">
         <h4><br>Paso 3. Elige la llave secreta que usaras tú y tus invitados para decifrar los mensajes</h3>
-            <br><br><center><input type="number" id="off-setone" min="1" max="20" placeholder="llave secreta"></center>
+            <br><center><input type="number" id="off-setone" min="1" max="20" placeholder="llave secreta"></center>
     </div>
-    
-    <center><br><br><br><br><label for="img-cifrar"><strong>Da click para cifrar</strong></label>
+    </section>
+    <!--Boton para cifrar-->
+    <section id="festejado1">
+    <center><br><br><label for="img-cifrar"><strong>Da click para cifrar</strong></label>
         <br><br><img src="img/cifrar.png" id="img-cifrar">
-        </center>
+        
+    <!--Espacio para imprimir mensaje cifrado-->
+        <div id="saludo"></div>
 
-        <!--<br><br><p style="color: rgb(10, 10, 10)">Mensaje:</p>-->
-
-        <p style="color: rgb(8, 8, 8) "id="saludo"></p>
-
-    <br><br><br><br><center><h4>¡Listo! Si has terminado, vamos a enviar a tus invitados</h4><br> 
+    <br><h4>¡Listo! Si has terminado, vamos a enviar a tus invitados</h4><br> 
     <img src="img/Enviar.png" class="img-enviar"></center>
-
+    </section>
 <script src="cipher.js"></script>
 <script src="index.js"></script>    
 </body>
