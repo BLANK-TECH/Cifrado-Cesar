@@ -65,10 +65,6 @@ body{
     margin: 20px;
 }
 
-#invitado{
-    background-color:rgb(188, 207, 224);
-}
-
 #festejado h4{
     color: black;
 }
@@ -85,8 +81,8 @@ body{
 #text-cifra{
     width: 100%;
 }
-#off-setone{
-    width: 50%;
+.off-setone{
+    width: 20%;
 }
 .boton-volver{
     width: 10vh;
@@ -102,6 +98,10 @@ body{
     opacity: 0.5;
 }
 #img-cifrar{
+    width: 10vh;
+    cursor:pointer;
+}
+#img-decifrar{
     width: 10vh;
     cursor:pointer;
 }
@@ -138,4 +138,65 @@ body{
     text-align: center;
     opacity: 0.9;
     padding: 20px;
+}
+
+.invitado::before {
+    content: "";
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fondoinvi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    align-items: center;
+}
+
+#titulo-inv{
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    opacity: 1;
+    position: relative;
+    opacity: 1;
+}
+
+#paso-unob{
+    color: black;
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5%;
+    position: relative;
+    opacity: 1;
+    font-size: 20px;
+
+}
+.mens-cifrado{
+    width: 95%;
+    max-width: 400px;
+    height:200px;
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.img-misterio{
+    width:100%;
+    opacity: 0.5;
+    height: 200px;
+}
+.text{
+    margin: 10px;
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+
+}
+.text p{
+    padding: 10px 20px;
 }

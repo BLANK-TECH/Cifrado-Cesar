@@ -5,7 +5,32 @@
     <title>Invitado</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body id="invitado">
+<body class="invitado" onload="InicializarInvitado()">
+  <h1 id="titulo-inv">¿Listo para decifrar el misterio?</h1>
+
+  <!--Boton para regresar a la pagina de inicio-->
+  <a href="index.html"><img src="img/home.png" class="boton-volver"></a>
+  <center>
+    <!--Caja de intrucciones-->
+    <div id="paso-unob">
+      <h3 id="instrucciones-inv">1.- Ingresa el mensaje secreto</h3>
+        <input type="text" id="text-decifra" placeholder="A-Z SIN CARACTERES ESPECIALES"><br><br>
+      <h3>2.- ¿Cual es la llave secreta?</h3>
+        <input type="number" class="off-setone" id="off-setTwo" min="1" max="20" placeholder="llave secreta"><br><br>
+
+        <!--Boton Decifrar-->
+        <label for="img-decifrar"><strong>¡ Da click para decifrar !</strong></label>
+        <br><br><img src="img/decifrar.png" id="img-decifrar">
+    </div>
+    
+    <!--Espacio para imprimir mensaje decifrado-->
+    <div class="mens-cifrado">
+      <img src= "img/misterio.jpg" class="img-misterio">
+      <div class="text" id="txt-decifrado">
+      </div>
+    </div>
+    
+</center>
 <script src="cipher.js"></script>
 <script src="index.js"></script>
 </body>

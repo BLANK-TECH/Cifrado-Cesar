@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Festejado</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Festejado</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body id="pagina2">
+<body id="pagina2" onload="Inicializar()">
     <section id="festejado">
-<!--Boton para regresar a la pagina de inicio-->
-    <a href="index.html"><img src="img/home.png" class="boton-volver"></a>
-<!--Imagen de fondo-->
-    <img src="img/globos.jpg" class="imgGlobos">
-<!--Cajas de instrucciones en pantalla-->
-    <div id="paso-uno" class="pasos">
-        <h4><br>Paso 1. Crea una invitacion digital que refleje lo cool de tu fiesta</h3>
-        <br><center><img src="img/editar.png" id="imgEditar"></center>
-    </div>
-    <div id="paso-dos" class="pasos">
-        <h4><br>Paso 2. Ingresa el mensaje secreto que enviaras a tus invitados</h3>
+        <!--Boton para regresar a la pagina de inicio-->
+        <a href="index.html"><img src="img/home.png" class="boton-volver"></a>
+
+        <!--Imagen de fondo-->
+        <img src="img/globos.jpg" class="imgGlobos">
+
+        <!--Cajas de instrucciones en pantalla-->
+        <div id="paso-uno" class="pasos">
+            <h4><br>Paso 1. Crea una invitacion digital que refleje lo cool de tu fiesta</h3>
+            <br><center><img src="img/editar.png" id="imgEditar"></center>
+        </div>
+        <div id="paso-dos" class="pasos">
+            <h4><br>Paso 2. Ingresa el mensaje secreto que enviaras a tus invitados</h3>
             <br><input type="text" id="text-cifra" placeholder="A-Z SIN CARACTERES ESPECIALES">
-            </div>
-    </div>
-    <div id="paso-tres" class="pasos">
-        <h4><br>Paso 3. Elige la llave secreta que usaras tú y tus invitados para decifrar los mensajes</h3>
+        </div>
+        <div id="paso-tres" class="pasos">
+            <h4><br>Paso 3. Elige la llave secreta que usaras tú y tus invitados para decifrar los mensajes</h3>
             <br><center><input type="number" id="off-setone" min="1" max="20" placeholder="llave secreta"></center>
-    </div>
+        </div>
     </section>
+
     <!--Boton para cifrar-->
     <section id="festejado1">
-    <center><br><br><label for="img-cifrar"><strong>Da click para cifrar</strong></label>
+        <center><br><br><label for="img-cifrar"><strong>Da click para cifrar</strong></label>
         <br><br><img src="img/cifrar.png" id="img-cifrar">
         
-    <!--Espacio para imprimir mensaje cifrado-->
+        <!--Espacio para imprimir mensaje cifrado-->
         <div id="saludo"></div>
 
-    <br><h4>¡Listo! Si has terminado, vamos a enviar a tus invitados</h4><br> 
-    <img src="img/Enviar.png" class="img-enviar"></center>
+        <br><h4>¡Listo! Si has terminado, vamos a enviar a tus invitados</h4><br> 
+        <img src="img/Enviar.png" class="img-enviar"></center>
     </section>
-<script src="cipher.js"></script>
-<script src="index.js"></script>    
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>    
 </body>
 </html>
