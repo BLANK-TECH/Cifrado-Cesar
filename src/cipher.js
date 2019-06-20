@@ -5,12 +5,16 @@ window.cipher = {
     let ascii = [];
       for(let i=0;i<textCifra.length;i++){
         ascii[i]=textCifra.charCodeAt(i);
-        if(ascii[i] === 32){
-          cifrada += ' ';
+        if(ascii[i] >=65 && ascii[i] <=90){
+          nuevaPosicion [i] = ((ascii[i]- 65 + offsetone)%26)+65;
+          cifrada += String.fromCharCode(nuevaPosicion[i]);
+        }
+        else if(ascii[i] >= 97 && ascii[i] <= 122){
+          nuevaPosicion [i] = ((ascii[i]- 97 + offsetone)%26)+97;
+          cifrada += String.fromCharCode(nuevaPosicion[i]);
         }
         else{
-        nuevaPosicion [i] = ((ascii[i]- 65 + offsetone)%26)+65;
-        cifrada += String.fromCharCode(nuevaPosicion[i]);
+          cifrada += String.fromCharCode(ascii[i]);
         }
       }
       /*console.log(cifrada)*/
@@ -22,12 +26,16 @@ window.cipher = {
     let ascii = [];
       for(let i=0;i<textDecifra.length;i++){
         ascii[i]=textDecifra.charCodeAt(i);
-        if(ascii[i] === 32){
-          decifrada += ' ';
+        if(ascii[i] >=65 && ascii[i]<=90){
+          nuevaPosicion [i] = (ascii[i] + 65 - offsetTwo) % 26 + 65;
+          decifrada += String.fromCharCode(nuevaPosicion[i]);
+        }
+        else if(ascii[i] >= 97 && ascii[i] <= 122){
+          nuevaPosicion [i] = (ascii[i] - 122 - offsetTwo) % 26 + 122;
+          decifrada += String.fromCharCode(nuevaPosicion[i]);
         }
         else{
-        nuevaPosicion [i] = ((ascii[i] + 65 - offsetTwo)%26)+65;
-        decifrada += String.fromCharCode(nuevaPosicion[i]);
+          decifrada += String.fromCharCode(ascii[i]);
         }
       }
       //console.log(decifrada);

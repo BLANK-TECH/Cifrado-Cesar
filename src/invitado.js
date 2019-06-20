@@ -6,7 +6,7 @@ const printDecifra = () => {
     let offsetTwo = document.getElementById('off-setTwo');
     const boxPrintDecifra = document.getElementById('txt-decifrado');
     offsetTwo = parseInt(offsetTwo.value)
-    textDecifra = textDecifra.value.toUpperCase()
+    textDecifra = textDecifra.value //.toUpperCase()
     const textDecifrado = window.cipher.decode(offsetTwo,textDecifra)
     boxPrintDecifra.innerHTML = textDecifrado;
 }
