@@ -18,7 +18,7 @@
 
 #home-page{
     top:0;
-    margin:20px;
+    margin:0;
     padding:0;
 }
 
@@ -43,6 +43,8 @@ body{
     margin: auto;
     margin-left: 20px;
     margin-top: 40px;
+    display:flex;
+
 }
 #check{
     display:none;
@@ -59,6 +61,9 @@ body{
 }
 .contenido label{
     cursor:pointer;
+}
+.contenido{
+    margin-top: 20px;
 }
 
 .button{
@@ -199,4 +204,63 @@ body{
 }
 .text p{
     padding: 10px 20px;
+}
+
+footer{
+    border-top: 1px solid;
+    border-top-color:#d1d3d6;
+    color:black;
+    display: flex;
+    height: 10vh;
+    /*align-items: center;*/
+    justify-content: space-between;
+    margin: 5% 5% 0 5%;
+    padding: 2vh;
+    
+}
+
+.menu-footer {
+    display: flex;
+    height: inherit;
+    font-size: 3vh;
+  }
+.menu-footer ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: inherit;
+  justify-content: right;
+}
+.menu-footer .link {
+    color: rgb(80, 38, 136);
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    padding: 0 10%;
+    width: 100%;
+    font-size: 3vh;
+  }
+  
+.iconos{
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    font-size: 4vh;
+    margin: 0;
+    opacity: .5;
+}
+.Inc{
+    display: flex;
+    height: inherit;
+    margin: 2mm;
+}
+.Inc p{
+    font-size: 2vh;
+    color: rgb(155, 151, 151);
+}
+.icon-facebook, .icon-twitter{
+    cursor: pointer;
+    margin: 5px;
 }
